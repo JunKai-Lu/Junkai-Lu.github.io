@@ -1,17 +1,27 @@
 ---
 layout: default
 ---
-<!-- Main -->
-	<div id="main">
-		<div id="content" class="container">
-			<div class="row">
-				<section class="8u -2u">
-					<a href="{{ site.prefix }}{{ page.url }}" class="image full"><img src="/assets/{{ page.featured }}" alt=""></a>
-					<header>
-						<h2>{{ page.title }}</h2>
-					</header>
-					{{ page.content }}
-				</section>
-			</div>
-		</div>
-	</div>
+<div class="col-sm-8 col-sm-offset-2 post">
+    <div class="header">
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+        <img src="{{page.featured_image  | prepend: site.baseurl}}">
+    </div>
+    <div class="col-sm-12">
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <br>
+        <article>
+            {{ content }}
+        </article>
+        {% include author_block.html %}
+    </div>
+</div>
