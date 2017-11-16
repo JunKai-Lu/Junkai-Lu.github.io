@@ -16,7 +16,7 @@
 title: Junkai Lu
 email: junkai-lu@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A personal website.让我测试一下中文的质量。
+  Dedicate for better future.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://junkai.lu" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
