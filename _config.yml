@@ -16,18 +16,20 @@
 title: Junkai Lu
 email: junkai-lu@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Dedicate for better future.
+  For a better future.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://junkai.lu" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+facebook_username: junkai.lu.37
 github_username:  Junkai-Lu
 
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-clean-blog
+paginate:          5
+paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed
-
+  - jekyll-paginate
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
