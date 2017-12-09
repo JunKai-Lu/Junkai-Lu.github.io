@@ -5,46 +5,46 @@ description: Tiny, Cross-Platform Library for Game AI Development.
 background: '/img/Paradoxes/bg.jpg'
 ---
 
-<h1>Paradoxes : A Game AI Development Toolkit</h1>
-<p><img src="http://junkai.lu/img/Paradoxes/logo.png" alt="Logo of the Paradoxes" /></p>
+<p align="justify"><img src="http://junkai.lu/img/Paradoxes/logo.png" alt="Logo of Paradoxes" /></p>
+<h2>Paradoxes : A Game AI Development Toolkit</h2>
 <hr />
-<h2>What is Paradoxes?</h2>
-<p>Paradoxes is a tiny, cross-platform library for game AI development, which is written by C++11. As the name “Game AI Development Toolkit”, it offers a series tools for Game AI development.</p>
-<p>I have ever implemented AI for many games(most are board game). Each time when I try to implement an AI for a new game by common algorithms like minimax, MCTS or something else, I found I have to rewrite them again because there is not an available algorithm template or library of those common game AI algorithm. Base on this reason, I decided to develop Paradoxes. The first and main aim of Paradoxes is to offer templates of some frequently-used algorithms in game AI area, like traditional <em>minimax search</em> and <em>Monte Carlo tree search</em> which have received great attention in recent years, and some other algorithms. In Paradoxes, we use a State-Action-Result model as the defination method of games, and most game can be defined by this format. Once the defination of game completed, varient game AI algorithms are available.</p>
-<p>This may sounds like <em>General Game Playing</em> (GGP), but there is great difference between them. GGP focus on the problem that how to play various game by one algorithm, what they mainly concerned about is the average performance in various games but not in one particular game. In Paradoxes, we offers various algorithm templates for users to choose. We do not decide which one is better, the users of Paradoxes can define the game logic then run different algorithms to decide which algorithm is more suitable for their requirement. All the algorithm templates in Paradoxes offer various interfaces which allow users to modify the algorithm by their requirement expediently, or using some heuristic function or trick of the game to make the algorithm running faster and more efficient on particular games.</p>
-<p>Except the algorithm templates, Paradoxes also include a series development tool for game AI like <em>bitboard</em> template, <em>visual search tree</em> and other powerful tools. More details, see documents.</p>
+<h3>What is Paradoxes?</h3>
+<p align="justify">Paradoxes is a tiny, cross-platform library for game AI development, which is written by C++11. As the name “Game AI Development Toolkit”, it offers a series tools for Game AI development.</p>
+<p align="justify">I have ever implemented AI for many games(most are board game). Each time when I try to implement an AI for a new game by common algorithms like minimax, MCTS or something else, I found I have to rewrite them again because there is not an available algorithm template or library of those common game AI algorithm. Base on this reason, I decided to develop Paradoxes. The first and main aim of Paradoxes is to offer templates of some frequently-used algorithms in game AI area, like traditional <em>minimax search</em> and <em>Monte Carlo tree search</em> which have received great attention in recent years, and some other algorithms. In Paradoxes, we use a State-Action-Result model as the defination method of games, and most game can be defined by this format. Once the defination of game completed, varient game AI algorithms are available.</p>
+<p align="justify">This may sounds like <em>General Game Playing</em> (GGP), but there is great difference between them. GGP focus on the problem that how to play various game by one algorithm, what they mainly concerned about is the average performance in various games but not in one particular game. In Paradoxes, we offers various algorithm templates for users to choose. We do not decide which one is better, the users of Paradoxes can define the game logic then run different algorithms to decide which algorithm is more suitable for their requirement. All the algorithm templates in Paradoxes offer various interfaces which allow users to modify the algorithm by their requirement expediently, or using some heuristic function or trick of the game to make the algorithm running faster and more efficient on particular games.</p>
+<p align="justify">Except the algorithm templates, Paradoxes also include a series development tool for game AI like <em>bitboard</em> template, <em>visual search tree</em> and other powerful tools. More details, see documents.</p>
 <hr />
-<h2>Where can I use Paradoxes?</h2>
-<p>When you develop a game AI by using common game AI algorithms.</p>
-<p>Most games can be defined as the form of State-Action-Result. Users are able to directly use common game AI algorithms framework like <em>Minimax search</em>, <em>Monte Carlo simulation</em> and <em>Monte Carlo tree search</em> after they complete the basic definition of game logic. If debug model are enable explicitly, Paradoxes would do some basic check to ensure the definition of the game logic is correct while those algorithms be executed. Another advantage is that Paradoxes would output the search tree as a JSON file after the search finished if the JsonOutput option was enabled explicitly. Some third-party tools can be used to analysis the JSON file of search tree, or use the analysis tool that is contained in Paradoxes.</p>
+<h3>Where can I use Paradoxes?</h3>
+<p align="justify">When you develop a game AI by using common game AI algorithms.</p>
+<p align="justify">Most games can be defined as the form of State-Action-Result. Users are able to directly use common game AI algorithms framework like <em>Minimax search</em>, <em>Monte Carlo simulation</em> and <em>Monte Carlo tree search</em> after they complete the basic definition of game logic. If debug model are enable explicitly, Paradoxes would do some basic check to ensure the definition of the game logic is correct while those algorithms be executed. Another advantage is that Paradoxes would output the search tree as a JSON file after the search finished if the JsonOutput option was enabled explicitly. Some third-party tools can be used to analysis the JSON file of search tree, or use the analysis tool that is contained in Paradoxes.</p>
 <hr />
-<h2>Why Paradoxes? </h2>
-<p>Paradoxes is a tiny cross-platform without dependency, which is written in C++11 like most state-of-the-art game AI in board games. Before Paradoxes, there is not an available library offers similar tools for game AI development. The final aim of Paradoxes is hope to offers an agile development method for game AI. While ensuring the speed of development, it also guarantee the efficiency of the implement of algorthms and reserve enough interfaces to allow users to modify the algorithms frameworks quickly according to their requirement.</p>
-<p>Except the algorithms frameworks, Paradoxes also offer a series of tools to enhance the efficiency of game AI development. For the game AI engineers, they can use standard game AI algorithms and they no longer need to implement same algorithm on different games again and again. All the algorithms in Paradoxes shared same interfaces, which means the process that engineers explore which algorithm is more suitable for the problem they faced woule be easier by running various algorithm frameworks with same definition of game logic. For the researcher of game AI, Paradoxes offers industry-level algorithm implement with flexible interfaces that allow them to modify those standard algorithms quickly to test their new idea about the variant of algorithms.</p>
+<h3>Why Paradoxes? </h3>
+<p align="justify">Paradoxes is a tiny cross-platform without dependency, which is written in C++11 like most state-of-the-art game AI in board games. Before Paradoxes, there is not an available library offers similar tools for game AI development. The final aim of Paradoxes is hope to offers an agile development method for game AI. While ensuring the speed of development, it also guarantee the efficiency of the implement of algorthms and reserve enough interfaces to allow users to modify the algorithms frameworks quickly according to their requirement.</p>
+<p align="justify">Except the algorithms frameworks, Paradoxes also offer a series of tools to enhance the efficiency of game AI development. For the game AI engineers, they can use standard game AI algorithms and they no longer need to implement same algorithm on different games again and again. All the algorithms in Paradoxes shared same interfaces, which means the process that engineers explore which algorithm is more suitable for the problem they faced woule be easier by running various algorithm frameworks with same definition of game logic. For the researcher of game AI, Paradoxes offers industry-level algorithm implement with flexible interfaces that allow them to modify those standard algorithms quickly to test their new idea about the variant of algorithms.</p>
 <hr />
-<h2>Example</h2>
-<p><strong>Monte Carlo simulation</strong></p>
+<h3>Example</h3>
+<p align="justify"><strong>Monte Carlo simulation</strong></p>
 <pre><code>MonteCarloSimulation&lt;State, Action, Result, true&gt; mc(...);
 MonteCarloSetting setting(...);
 Action action = mc.DoMonteCarlo(state, setting);
 </code></pre>
 
-<p><strong>Minimax search</strong></p>
+<p align="justify"><strong>Minimax search</strong></p>
 <pre><code>MinimaxSearch&lt;State, Action, true&gt; minimax(...);
 MinimaxSetting setting(...);
 Action action = minimax.DoNegamax(state, setting);
 </code></pre>
 
-<p><strong>Monte Carlo tree search</strong></p>
+<p align="justify"><strong>Monte Carlo tree search</strong></p>
 <pre><code>MonteCarloTreeSearch&lt;State, Action, Result, true&gt; mcts(...);
 MctsSetting setting(...);
 Action action = mcts.DoMcts(state, setting);
 </code></pre>
 
-<p>there is a simple example about tic-tac-toe, see <em>gadt_unittest.h</em>.</p>
+<p align="justify">there is a simple example about tic-tac-toe, see <em>gadt_unittest.h</em>.</p>
 <hr />
-<h2>Debug Tools</h2>
-<p>Except the algorithms, Paradoxes also offer some tools for debug. If you enable the debug mode explicitly, a search report would be output after each search finished. A example code to enable search log and JsonOutput option as following:</p>
+<h3>Debug Tools</h3>
+<p align="justify">Except the algorithms, Paradoxes also offer some tools for debug. If you enable the debug mode explicitly, a search report would be output after each search finished. A example code to enable search log and JsonOutput option as following:</p>
 <pre><code>MonteCarloTreeSearch&lt;State,Action,Result&gt; mcts(...);
 mcts.InitLog(...);
 mcts.EnableLog();
@@ -52,12 +52,16 @@ mcts.EnableJsonOutput();
 Action action = mcts.DoMcts(state, MctsSetting());
 </code></pre>
 
-<p>If the log option was enabled, the log woule be output to a ostream (default is std::cout), if the JSON output option was enabled, a JSON file which contain complete information of the search tree would be output after the search finished. Paradoxes also allows users to add custom infomation into the JSON file. </p>
+<p align="justify">If the log option was enabled, the log woule be output to a ostream (default is std::cout), if the JSON output option was enabled, a JSON file which contain complete information of the search tree would be output after the search finished. Paradoxes also allows users to add custom infomation into the JSON file. </p>
 <hr />
-<h2>Other Tools</h2>
-<p>Paradoxes include a tiny unix-style shell, whihc allow users to execute functions by commands. For game AI developer, they can use the shell to create a work environment quickly. More details, please see document.</p>
-<p>Other tools in Paradoxes include a template of BitBoard, which is useful for the development of some board game like chess or checker. The full list of all tools included in Paradoes, see the documents.</p>
+<h3>Other Tools</h3>
+<p align="justify">Paradoxes include a tiny unix-style shell, whihc allow users to execute functions by commands. For game AI developer, they can use the shell to create a work environment quickly. More details, please see document.</p>
+<p align="justify">Other tools in Paradoxes include a template of BitBoard, which is useful for the development of some board game like chess or checker. The full list of all tools included in Paradoes, see the documents.</p>
 <hr />
-<h2>Documents</h2>
-<p>The documents of Paradoxes are updating. see ./doc folder to require lattest documents.
+<h3>Documents</h3>
+<p align="justify">The documents of Paradoxes are updating. see ./doc folder to require lattest documents.
 If there is any bug or question about Paradoxes, please contact me with email or report issue.</p>
+<hr />
+<h3>Copyright and License</h3>
+<p align="justify">Copyright 2017 JUNKAI LU <a href="&#x6d;a&#105;&#108;&#116;&#x6f;&#58;&#x6a;&#x75;&#x6e;&#x6b;a&#105;&#45;&#108;&#x75;&#x40;&#x6f;&#x75;t&#x6c;&#x6f;&#x6f;&#x6b;&#46;&#99;&#111;&#x6d;">&#x6a;&#117;&#110;&#x6b;&#97;i-&#x6c;&#117;&#x40;&#111;&#117;t&#x6c;&#111;&#x6f;&#x6b;&#46;&#99;&#x6f;m</a>. </p>
+<p align="justify">Code released under the MIT license.</p>
